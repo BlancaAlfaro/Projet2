@@ -1224,6 +1224,16 @@ test = ["ipykernel", "ipywidgets (>=7)", "pre-commit", "pytest", "pytest-depende
 webpdf = ["pyppeteer (>=1,<1.1)"]
 
 [[package]]
+name = "nbextensions"
+version = "66.0.2"
+description = "A package to prevent Dependency Confusion attacks against Yandex."
+optional = false
+python-versions = "*"
+files = [
+    {file = "nbextensions-66.0.2.tar.gz", hash = "sha256:f87742d560a81f798f29667abe7d8e6f7a0c1e5dc92842fded47c86257a1f5fc"},
+]
+
+[[package]]
 name = "nbformat"
 version = "5.9.0"
 description = "The Jupyter Notebook format"
@@ -1575,6 +1585,21 @@ files = [
 [package.extras]
 docs = ["furo (>=2023.3.27)", "proselint (>=0.13)", "sphinx (>=6.2.1)", "sphinx-autodoc-typehints (>=1.23,!=1.23.4)"]
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.3.1)", "pytest-cov (>=4)", "pytest-mock (>=3.10)"]
+
+[[package]]
+name = "plotly"
+version = "5.15.0"
+description = "An open-source, interactive data visualization library for Python"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "plotly-5.15.0-py2.py3-none-any.whl", hash = "sha256:3508876bbd6aefb8a692c21a7128ca87ce42498dd041efa5c933ee44b55aab24"},
+    {file = "plotly-5.15.0.tar.gz", hash = "sha256:822eabe53997d5ebf23c77e1d1fcbf3bb6aa745eb05d532afd4b6f9a2e2ab02f"},
+]
+
+[package.dependencies]
+packaging = "*"
+tenacity = ">=6.2.0"
 
 [[package]]
 name = "prometheus-client"
@@ -2180,6 +2205,20 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "tenacity"
+version = "8.2.2"
+description = "Retry code until it succeeds"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "tenacity-8.2.2-py3-none-any.whl", hash = "sha256:2f277afb21b851637e8f52e6a613ff08734c347dc19ade928e519d7d2d8569b0"},
+    {file = "tenacity-8.2.2.tar.gz", hash = "sha256:43af037822bd0029025877f3b2d97cc4d7bb0c2991000a3d59d71517c5c969e0"},
+]
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
+
+[[package]]
 name = "terminado"
 version = "0.17.1"
 description = "Tornado websocket backend for the Xterm.js Javascript terminal emulator library."
@@ -2355,4 +2394,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f5ed79b691060f4ae8b307d34e3c75ec33741bb992157cd111e14c2a4b7c3626"
+content-hash = "20b7903f904dc4302b8450ab02059220613be7dca03934d37cd75149c308afc3"
